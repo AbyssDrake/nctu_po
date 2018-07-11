@@ -151,7 +151,7 @@
   <div class="navbox6_2"></div>
   <div class="navbox6_map">
 
-    <div class="map1" style="background-image: url(<?php bloginfo('template_url');?>/image/clock_map_1.png");"></div>
+    <div class="map1" style="background-image: url(<?php bloginfo('template_url');?>/image/clock_map_1.png);"></div>
     <button id="close">X</button>
 
     <div  id=c_navi>
@@ -174,19 +174,19 @@
     <div id="navid7">留言版</div>
   </div>
   <div class="navbox7">
-    <hr style=" border: 1px solid #EA9C32; position: fixed; top: 30%; left: 5%; width: 10%;">
-    <div id="navboxw7_1">出國申請</div>
-    <div id="navboxw7_2">全時工讀生</div>
-    <div id="navboxw7_3">其他問題</div>
-    <div id="navboxw7_4">研發替代役</div>
-    <div id="navboxw7_5">約用人員</div>
-    <div id="navboxw7_6">差勤</div>
-    <div id="navboxw7_7">專兼任計畫人員</div>
-    <div id="navboxw7_8">專兼任教師</div>
-    <div id="navboxw7_9">博士後研究員</div>
-    <div id="navboxw7_10">離職問題</div>
-    <div id="navboxw7_11"><hr style=" border: 1px solid #EA9C32; position: fixed; top: 85%; left: 0%; width: 8%;">留言</div>
-    <hr style=" border: 1px solid #EA9C32; position: fixed; top: 30%; left: 35%; width: 45%;" >
+    <!-- <hr style=" border: 1px solid #EA9C32; position: fixed; top: 30%; left: 5%; width: 10%;"> -->
+    <div id="navboxw7_1" class="navbox7-left">出國申請</div>
+    <div id="navboxw7_2" class="navbox7-left">全時工讀生</div>
+    <div id="navboxw7_3" class="navbox7-left">其他問題</div>
+    <div id="navboxw7_4" class="navbox7-left">研發替代役</div>
+    <div id="navboxw7_5" class="navbox7-left">約用人員</div>
+    <div id="navboxw7_6" class="navbox7-left">差勤</div>
+    <div id="navboxw7_7" class="navbox7-left">專兼任計畫人員</div>
+    <div id="navboxw7_8" class="navbox7-left">專兼任教師</div>
+    <div id="navboxw7_9" class="navbox7-left">博士後研究員</div>
+    <div id="navboxw7_10" class="navbox7-left">離職問題</div>
+    <div id="navboxw7_11" class="navbox7-left"><hr style=" border: 1px solid #EA9C32; position: fixed; top: 85%; left: 0%; width: 8%;">留言</div>
+    <!-- <hr style=" border: 1px solid #EA9C32; position: fixed; top: 30%; left: 35%; width: 45%;" > -->
     <div id="navboxrw7_1">可以左方分類查閱常見問題之相關解答，如需留言請點選左下方留言鈕。</div>
 
   </div>
@@ -215,7 +215,7 @@
         <div class="left-side-bar-element ">
             友校訊息
         </div>
-        <div id="line" class="left-side-bar-element" style="border-style: solid;border-width:0.2px;height: 1px;width: 45%;">
+        <div id="line" class="" style="border-style: solid;border-width:0.2px;height: 1px;width: 45%;color: #f4a22c;">
 
 
         </div>
