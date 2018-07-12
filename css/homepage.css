@@ -108,6 +108,24 @@ body {
     white-space: nowrap;
     width: 10px;
 }
+.msg-board-div{
+    float:right;
+
+    height: 100%;
+    width: 80%;
+}
+.msg-board-content{
+    text-align: center;
+    letter-spacing: 2.3px;
+    font-weight: bold;
+    color: #f4a22c;
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-top: 3%;
+    white-space: nowrap;
+    width: 10px;
+}
 
 
 /*語言*/

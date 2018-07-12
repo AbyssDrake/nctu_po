@@ -4,8 +4,10 @@
  */
 ?>
 <!DOCTYPE html>
+
 <html>
 <head>
+
 <meta charset="utf-8" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +29,7 @@
 
 </script>
 <body>
+
 <div class="navbar">
   <div class="triangle"></div>
 
@@ -178,6 +181,52 @@
     <div id="navboxw7_1" class="navbox7-left">出國申請</div>
     <div id="navboxw7_2" class="navbox7-left">全時工讀生</div>
     <div id="navboxw7_3" class="navbox7-left">其他問題</div>
+    <div class ="msg-board-div">
+    <?php
+function hasNextP($text)
+{
+    return (strpos($text, "<p>") !== false);
+}
+function getAllP($text)
+{
+    $all = array();
+    $start_pos = 0;
+
+    while (hasNextP($text)) {
+        $start = strpos($text, "<p>", $start_pos) + 3;
+        $length = strpos($text, "</p>", $start) - $start;
+        //echo $length . " ";
+        $string = substr($text, $start, $length);
+
+        $all[] = $string;
+        $startpos = $start + $length + 5;
+        $text = substr($text, $startpos);
+    }
+
+    return $all;
+}
+
+?>
+        <?php
+$my_postid = 98; //This is page id or post id
+$content_post = get_post($my_postid);
+$content = $content_post->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]&gt;', $content);
+$all = getAllP($content);
+foreach ($all as &$text) {
+    $print = '<div class="msg-board-content">' . $text . '</div>';
+    echo ($print);
+}
+// if (hasNextP($content)) {
+//     $string = getNextP($content);
+//     $string =
+//     echo $string;
+//     //echo (str_replace(' ', '', $string));
+// }
+
+?>
+    </div>
     <div id="navboxw7_4" class="navbox7-left">研發替代役</div>
     <div id="navboxw7_5" class="navbox7-left">約用人員</div>
     <div id="navboxw7_6" class="navbox7-left">差勤</div>
