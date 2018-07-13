@@ -178,10 +178,9 @@
   </div>
   <div class="navbox7">
     <!-- <hr style=" border: 1px solid #EA9C32; position: fixed; top: 30%; left: 5%; width: 10%;"> -->
-    <div id="navboxw7_1" class="navbox7-left">出國申請</div>
-    <div id="navboxw7_2" class="navbox7-left">全時工讀生</div>
-    <div id="navboxw7_3" class="navbox7-left">其他問題</div>
     <div class ="msg-board-div">
+
+    <!-- 後端function -->
     <?php
 function hasNextP($text)
 {
@@ -207,7 +206,9 @@ function getAllP($text)
 }
 
 ?>
-        <?php
+
+    <!-- 其他問題 -->
+    <?php
 $my_postid = 98; //This is page id or post id
 $content_post = get_post($my_postid);
 $content = $content_post->post_content;
@@ -215,18 +216,41 @@ $content = apply_filters('the_content', $content);
 $content = str_replace(']]>', ']]&gt;', $content);
 $all = getAllP($content);
 foreach ($all as &$text) {
-    $print = '<div class="msg-board-content">' . $text . '</div>';
+    $print = '<div class="msg-board-content other-questions" style="display:none">' . $text . '</div>';
     echo ($print);
 }
-// if (hasNextP($content)) {
-//     $string = getNextP($content);
-//     $string =
-//     echo $string;
-//     //echo (str_replace(' ', '', $string));
-// }
-
 ?>
+    <!-- 約用人員 -->
+    <?php
+$my_postid = 104; //This is page id or post id
+$content_post = get_post($my_postid);
+$content = $content_post->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]&gt;', $content);
+$all = getAllP($content);
+foreach ($all as &$text) {
+    $print = '<div class="msg-board-content personnel" style="display:none">' . $text . '</div>';
+    echo ($print);
+}
+?>
+    <?php
+$my_postid = 106; //This is page id or post id
+$content_post = get_post($my_postid);
+$content = $content_post->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]&gt;', $content);
+$all = getAllP($content);
+foreach ($all as &$text) {
+    $print = '<div class="msg-board-content teachers" style="display:none">' . $text . '</div>';
+    echo ($print);
+}
+?>
+
     </div>
+
+    <div id="navboxw7_1" class="navbox7-left">出國申請</div>
+    <div id="navboxw7_2" class="navbox7-left">全時工讀生</div>
+    <div id="navboxw7_3" class="navbox7-left">其他問題</div>
     <div id="navboxw7_4" class="navbox7-left">研發替代役</div>
     <div id="navboxw7_5" class="navbox7-left">約用人員</div>
     <div id="navboxw7_6" class="navbox7-left">差勤</div>

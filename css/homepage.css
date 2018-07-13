@@ -109,8 +109,10 @@ body {
     width: 10px;
 }
 .msg-board-div{
+    padding-left: 170px;
+    padding-top: 60px;
     float:right;
-
+    text-align: center;
     height: 100%;
     width: 80%;
 }
@@ -125,6 +127,10 @@ body {
     margin-top: 3%;
     white-space: nowrap;
     width: 10px;
+}
+/* 留言板 */
+.other-questions{
+    
 }
 
 
