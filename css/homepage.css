@@ -6,7 +6,6 @@ body {
 .navbar {
     background-color: #f2f2f2;
     background-size: cover;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,7 +26,6 @@ body {
 }
 
 .hp-img_wrapper div[class^="img"] img {
-    width: 10vh;
     /*top:58%;*/
 }
 
@@ -72,9 +70,9 @@ body {
     float: right;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.right-side{
-  
-}
+
+.right-side {}
+
 .line {
     width: 60px;
     height: 1px;
@@ -90,17 +88,20 @@ body {
     flex-direction: column;
     position: absolute;
     height: 100%;
-    padding: 50px 0px 50px 20px;
+    padding: 50px 0px 50px 40px;
     background-color: none;
     width: 100%;
     text-align: left;
-
 }
 
 .left-side-bar-element {
+    font-family: Noto Sans CJK TC Medium;
+    font-size: 1em;
+    line-height: 2.5em;
+    letter-spacing: 0.2em;
+    color: #F4A22C;
     letter-spacing: 2.3px;
     font-weight: bold;
-    color: #f4a22c;
     display: block;
     position: relative;
     text-align: left;
@@ -108,15 +109,17 @@ body {
     white-space: nowrap;
     width: 10px;
 }
-.msg-board-div{
+
+.msg-board-div {
     padding-left: 170px;
     padding-top: 60px;
-    float:right;
+    float: right;
     text-align: center;
     height: 100%;
     width: 80%;
 }
-.msg-board-content{
+
+.msg-board-content {
     text-align: center;
     letter-spacing: 2.3px;
     font-weight: bold;
@@ -128,11 +131,10 @@ body {
     white-space: nowrap;
     width: 10px;
 }
-/* 留言板 */
-.other-questions{
-    
-}
 
+/* 留言板 */
+
+.other-questions {}
 
 /*語言*/
 
@@ -208,10 +210,6 @@ input[type=text] {
     position: fixed;
     /*background-color: #F4A22C;*/
 }
-
-
-
-
 
 /*navbar 平行四邊形&字*/
 
@@ -411,8 +409,6 @@ input[type=text] {
 }
 
 .new_navbox1_and_2 {
-
-
     background-color: #F4A22C;
     position: fixed;
     top: 75%;
@@ -421,25 +417,19 @@ input[type=text] {
     /*bottom: 8.7%;*/
     width: 100%;
     height: 25%;
-
     width: 28%;
     height: 0;
     /*  margin:10.2% auto;
 */
     padding: 0;
-
-
     border-right: 81px solid transparent;
     border-top: 375px solid #F4A22C;
     z-index: 10;
     position: absolute;
     opacity: 0.8;
     top: 90%;
-
     display: none;
 }
-
-
 
 /*粗橘線*/
 
@@ -521,8 +511,20 @@ input[type=text] {
     z-index: 2;
 }
 
-
 /*灰*/
+
+.buttom-icon {
+    width: 75px;
+    height: 75px;
+    z-index: 11;
+    position: relative;
+    top: 20px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.3))
+}
+
+.buttom-text {}
 
 .pic1 {
     background-color: #D8D8D8;
@@ -691,7 +693,6 @@ input[type=text] {
     bottom: 0%;
 }
 
-
 /*左box transition*/
 
 .one {
@@ -806,7 +807,6 @@ input[type=text] {
     display: none;
 }
 
-
 /*右欄BOX hover*/
 
 #rbox1 {
@@ -904,7 +904,6 @@ input[type=text] {
     display: block;
 }
 
-
 /*
 .line3 > div[class^="text"] img{
       width:100%;
@@ -919,16 +918,16 @@ input[type=text] {
     top: 78%;
 }
 
-
 /*下方img1*/
 
+/*
 .img1 {
     left: 56%;
     width: 100%;
     height: 100;
-
     top: 78%;
 }
+*/
 
 img.01 {
     box-shadow: inset 0px 0px 50px 0px #ABABAB, 2px -8px 18px 10px #242424;
@@ -939,61 +938,44 @@ img.01 {
 
 .text1 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
 
-
 /*下方img2*/
 
+/*
 .img2 {
     left: 56%;
     width: 100%;
     height: 100;
-
     top: 78%;
-    /*top: 78%;*/
-    /*height: 23.5%;
-  width: 13%;*/
 }
+*/
 
 .text2 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
 
-
 /*下方img3*/
 
 .img3 {
-    left: 56%;
-    width: 100%;
-    height: 100;
-
-    top: 78%;
     /*top: 78%;*/
     /*height: 23.5%;
   width: 13%;*/
@@ -1001,155 +983,78 @@ img.01 {
 
 .text3 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
-
 
 /*下方img4*/
 
-.img4 {
-    z-index: 3;
-    /*position: fixed;*/
-    left: 56%;
-    width: 100%;
-    height: 100;
-
-    top: 78%;
-    /*top: 78%;*/
-    /*
-  height: 23.5%;
-  width: 13%;*/
-}
-
 .text4 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
-
 
 /*下方img5*/
 
-.img5 {
-    z-index: 3;
-    /*position: fixed;*/
-    left: 56%;
-    width: 100%;
-    height: 100;
-
-    top: 78%;
-
-    /*top:78%;/*
-
-  height: 23.5%;
-  width: 13%;*/
-}
-
 .text5 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
-
 
 /*下方img6*/
 
-.img6 {
-    z-index: 3;
-    /*position: fixed;*/
-    left: 56%;
-    width: 100%;
-    height: 100;
-
-    top: 78%;
-    /*top: 78%;*/
-    /*
-  height: 23.5%;
-  width: 13%;*/
-}
-
 .text6 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
-
 
 /*下方img7*/
 
-.img7 {
-    left: 56%;
-    width: 100%;
-    height: 100;
-
-    top: 78%;
-}
-
 .text7 {
     position: relative;
-
     /*background-color: black;*/
     color: #040000;
     font-size: 1.3em;
-
-
     top: 25px;
     width: 100%;
     left: 0%;
     text-align: center;
-
     font-weight: 500;
     line-height: 1.0em;
 }
 
-
 /*navbar hover 出2個直角梯形外面一大包*/
-
 
 /*.top{
   width: 100%;
@@ -1159,7 +1064,6 @@ img.01 {
   margin: 0px;
   position: absolute;
 }*/
-
 
 /*關於本室，訊息公告.....hover後橘色效果*/
 
@@ -1243,7 +1147,6 @@ img.01 {
     color: #F2F2F2;
 }
 
-
 /*關於本室，訊息公告.....點擊後橘色效果*/
 
 #nav1.click1 {
@@ -1326,7 +1229,6 @@ img.01 {
     color: #F2F2F2;
 }
 
-
 /*hover 2個直角梯形,點擊再展開直角梯形*/
 
 .navbox1 {
@@ -1339,7 +1241,6 @@ img.01 {
     position: fixed;
     /*opacity: 0.8;*/
     top: 25%;
-
     display: none;
 }
 
@@ -1362,7 +1263,6 @@ img.01 {
     display: none;
 }
 
-
 .navbox2 {
     width: 28%;
     height: 0;
@@ -1374,7 +1274,6 @@ img.01 {
     position: fixed;
     /*opacity: 0.8;*/
     top: 25%;
-
     display: none;
 }
 
@@ -1403,7 +1302,6 @@ img.01 {
     position: fixed;
     /*opacity: 0.8;*/
     top: 25%;
-
     display: none;
 }
 
@@ -1432,7 +1330,6 @@ img.01 {
     position: fixed;
     /*opacity: 0.8;*/
     top: 25%;
-
     display: none;
 }
 
@@ -1472,7 +1369,6 @@ img.01 {
     position: fixed;
     /*opacity: 0.8;*/
     top: 25%;
-
     display: none;
 }
 
@@ -1502,7 +1398,6 @@ img.01 {
     /*opacity: 0.8;*/
     top: 25%;
     opacity: 0.1;
-
     display: none;
 }
 
@@ -1520,7 +1415,6 @@ img.01 {
     display: none;
     top: 25%;
 }
-
 
 .navbox6_map {
     width: 100%;
@@ -1572,7 +1466,6 @@ img.01 {
     display: none;
     top: 25%;
 }
-
 
 /*關於本室navbox1字*/
 
@@ -1767,7 +1660,6 @@ img.01 {
     height: 75%;
 }
 
-
 #foot-area1 {
     position: absolute;
     /*  left: 3vh;
@@ -1799,17 +1691,14 @@ img.01 {
 */
 }
 
-
 #foot-area4 {
     float: right;
     position: absolute;
     height: 100%;
     width: 13.3%;
     left: 60%;
-
     background-color: #243538;
 }
-
 
 #foot-area5 {
     float: right;
@@ -1817,10 +1706,8 @@ img.01 {
     height: 100%;
     width: 13.3%;
     left: 73.3%;
-
     background-color: #243538;
 }
-
 
 #foot-area6 {
     float: right;
@@ -1828,12 +1715,8 @@ img.01 {
     height: 100%;
     width: 13.4%;
     left: 86.6%;
-
     background-color: #243538;
 }
-
-
-
 
 .foot_title {
     color: #DA9E2A;
